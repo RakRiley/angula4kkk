@@ -1,0 +1,14 @@
+<div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="myform" >
+         username
+          <input type="text" id="user" formControlName="username">
+          password
+          <input type="password" id="pass"  formControlName="password">
+   
+        <button (click)="getData()" type="submit">Submit</button>
+   
+      </form>
+      <pre>{{myform.value | json}}</pre>
+
+</div>
+
